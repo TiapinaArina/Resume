@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Резюме</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="page-body">
+    <div class="container">
+        <div class="content">
+            <div class="photo">
+                <img src="img/women.jpg" alt="Портрет девушки">
+            </div>
+            <div class="basic-inf">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Mira Karlsson">
+                <div class="input-row">
+                    <div>
+                        <label for="profession">Profession</label>
+                        <input type="text" id="profession" placeholder="WEB Designer">
+                    </div>
+                    <div>
+                        <label for="location">Location</label>
+                        <input type="text" id="location" placeholder="Kansas,USA">
+                    </div>
+                </div>
+            </div>
+            <div class="personal-inf">
+                <h2>Personal info</h2>
+                <label for="birth-date">Birth date</label>
+                <input type="date" id="birth-date">
+                <label for="nationality">Nationality</label>
+                <input type="text" id="nationality" placeholder="Sweden">
+                <label for="years-of-experience">Years of experience</label>
+                <input type="number" id="years-of-experience" placeholder="10">
+            </div>
+            <div class="about-inf">
+                <div class="about-me">
+                    <div>
+                        <h2>About me</h2>
+                        <textarea name="story" rows="8" placeholder="Обо мне"></textarea>
+                    </div>
+                </div>
+                <div class="education">
+                    <h2>Education</h2>
+                    <div class="education-list clear-list">
+                        <div class="education-item">
+                            <label for="school">School</label>
+                            <input type="text" id="school">
+                        </div>
+                        <div class="education-item">
+                            <label for="college">College</label>
+                            <input type="text" id="college">
+                        </div>
+                        <div class="education-item">
+                            <label for="university">University</label>
+                            <input type="text" id="university">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-inf">
+                <h2>Contact info</h2>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="816-555-0146">
+                <label for="skype">Nationality</label>
+                <input type="text" id="skype" placeholder="mira_karlsson">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="mira.example.com">
+                <label for="website">Website</label>
+                <input type="url" id="website" placeholder="www.example.com">
+            </div>
+            <div class="career-timeline">
+                <h2>Career timeline</h2>
+                <div class="career-list clear-list">
+                    <div class="career-item">
+                        <input type="text" name="years" placeholder="2013-2015">
+                        <input type="text" name="place" placeholder="Worked somewhere">
+                    </div>
+                    <div class="career-item">
+                        <input type="text" name="years" placeholder="2015-2018">
+                        <input type="text" name="place" placeholder="Worked somewhere">
+                    </div>
+                    <div class="career-item">
+                        <input type="text" name="years" placeholder="2018-2023">
+                        <input type="text" name="place" placeholder="Worked somewhere">
+                    </div>
+                </div>
+            </div>
+            <div class="languages">
+                <div>
+                    <h2>Languages</h2>
+                    <ul class="clear-list">
+                        <li>
+                            <label for="english">English</label>
+                            <input type="range" id="english" min="0" max="10" value="5" class="range">
+                        </li>
+                        <li>
+                            <label for="french">French</label>
+                            <input type="range" id="french" min="0" max="10" value="3">
+                        </li>
+                        <li>
+                            <label for="german">German</label>
+                            <input type="range" id="german" min="0" max="10" value="1">
+                        </li>
+
+                    </ul>
+
+
+                </div>
+            </div>
+            <div class="hobbies">
+                <div>
+                    <h2>Hobbies</h2>
+                    <div>
+                        <input type="checkbox" id="dancing">
+                        <label for="dancing">Танцы</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="cooking">
+                        <label for="cooking">Кулинария</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="painting">
+                        <label for="painting">Рисование</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="traveling">
+                        <label for="traveling">Путешествия</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="hunting">
+                        <label for="hunting">Охота</label>
+                    </div>
+                </div>
+            </div>
+            <div class="analysis-inf">
+                <div class="expertise">
+                    <h2>Expertise</h2>
+                    <div class="circles-analusis">
+                        <div class="circle-one">
+                            <div class="circle-text">
+                                <p>50<sup>%</sup></p>
+                                <p>UI/UX Design</p>
+                            </div>
+                        </div>
+                        <div class="circle-two">
+                            <div class="circle-text">
+                                <p>25<sup>%</sup></p>
+                                <p>Development</p>
+                            </div>
+                        </div>
+                        <div class="circle-three">
+                            <div class="circle-text">
+                                <p>13<sup>%</sup></p>
+                                <p>Icons</p>
+                            </div>
+                        </div>
+                        <div class="circle-four">
+                            <div class="circle-text">
+                                <p>12<sup>%</sup></p>
+                                <p>Mobile</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h2>Skills</h2>
+                    <ul class="skills-list clear-list">
+                        <li>
+                            <label for="design-tools">Ui/Ux design tools</label>
+                            <input type="range" id="design-tools" min="0" max="10" value="7">
+                        </li>
+                        <li>
+                            <label for="image-tools">Image retouching tools</label>
+                            <input type="range" id="image-tools" min="0" max="10" value="8">
+                        </li>
+                        <li>
+                            <label for="front-end">Front-end coding tools</label>
+                            <input type="range" id="front-end" min="0" max="10" value="5">
+                        </li>
+                        <li>
+                            <label for="back-end">Back-end coding tools</label>
+                            <input type="range" id="back-end" min="0" max="10" value="8">
+                        </li>
+                        <li>
+                            <label for="testing-tools">Testing tools</label>
+                            <input type="range" id="testing-ools" min="0" max="10" value="4">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="btn-row">
+            <button class="btn-save">Сохранить</button>
+            <button class="btn-clear">Очистить</button>
+        </div>
+    </div>
+    <script src="main.js "></script>
+</body>
+
+</html>

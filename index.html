@@ -35,7 +35,7 @@
                 <label for="birth-date">Birth date</label>
                 <input type="date" id="birth-date">
                 <label for="nationality">Nationality</label>
-                <input type="text" id="nationality" placeholder="Sweden">
+                <input type="text" id="nationality" placeholder="Sweden" class="reg-inp">
                 <label for="years-of-experience">Years of experience</label>
                 <input type="number" id="years-of-experience" placeholder="10">
             </div>
@@ -43,31 +43,27 @@
                 <div class="about-me">
                     <div>
                         <h2>About me</h2>
-                        <textarea name="story" rows="8" placeholder="Обо мне"></textarea>
+                        <textarea name="story" rows="8" placeholder="Обо мне" class="reg-inp"></textarea>
                     </div>
                 </div>
                 <div class="education">
                     <h2>Education</h2>
                     <div class="education-list clear-list">
                         <div class="education-item">
-                            <label for="school">School</label>
-                            <input type="text" id="school">
-                        </div>
-                        <div class="education-item">
-                            <label for="college">College</label>
-                            <input type="text" id="college">
-                        </div>
-                        <div class="education-item">
-                            <label for="university">University</label>
-                            <input type="text" id="university">
+                            <input type="text" placeholder="School" class="reg-inp">
+                            <input type="text" placeholder="About School">
+                            <button class="close-button" onclick="this.parentElement.remove()">x</button>
                         </div>
                     </div>
+                    <button class="add-button"
+                        onclick="addBlock('.education-list','.education-item','School','About School')">Добавить
+                        +</button>
                 </div>
             </div>
             <div class="contact-inf">
                 <h2>Contact info</h2>
                 <label for="phone">Phone</label>
-                <input type="tel" id="phone" placeholder="816-555-0146">
+                <input type="tel" id="phone" placeholder="+7905219-00-26">
                 <label for="skype">Nationality</label>
                 <input type="text" id="skype" placeholder="mira_karlsson">
                 <label for="email">Email</label>
@@ -79,18 +75,13 @@
                 <h2>Career timeline</h2>
                 <div class="career-list clear-list">
                     <div class="career-item">
-                        <input type="text" name="years" placeholder="2013-2015">
-                        <input type="text" name="place" placeholder="Worked somewhere">
-                    </div>
-                    <div class="career-item">
-                        <input type="text" name="years" placeholder="2015-2018">
-                        <input type="text" name="place" placeholder="Worked somewhere">
-                    </div>
-                    <div class="career-item">
-                        <input type="text" name="years" placeholder="2018-2023">
-                        <input type="text" name="place" placeholder="Worked somewhere">
+                        <input type="text" id="year" placeholder="2013-2015">
+                        <input type="text" id="career" placeholder="Worked somewhere">
+                        <button class="close-button" onclick="this.parentElement.remove()">x</button>
                     </div>
                 </div>
+                <button class="add-button"
+                    onclick="addBlock('.career-list','.career-item','2013-2015','Worked somewhere')">Добавить +</button>
             </div>
             <div class="languages">
                 <div>
@@ -199,6 +190,7 @@
         <div class="btn-row">
             <button class="btn-save">Сохранить</button>
             <button class="btn-clear">Очистить</button>
+            <button class="btn-restore">Восстановить</button>
         </div>
     </div>
     <script src="main.js "></script>

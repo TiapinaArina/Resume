@@ -263,8 +263,17 @@ textarea {
 .education-item,
 .career-item {
     position: relative;
-
     padding-left: 20px;
+}
+
+.education-item input:first-child,
+.career-item input:first-child {
+    width: 25%;
+}
+
+.education-item:not(:last-child),
+.career-item:not(:last-child) {
+    margin-bottom: 10px;
 }
 
 .education-item::before,
@@ -279,13 +288,40 @@ textarea {
     background-color: var(--basic-light-blue);
 }
 
-.career-item::before {
-    top: 7px;
+.close-button {
+    position: absolute;
+    right: 5px;
+    top: 25px;
+    font-size: 1.5em;
+    color: var(--basic-white);
+    border: none;
+    background-color: inherit;
 }
 
-.career-item input:first-child {
+.add-button{
+    width: fit-content;
+    margin-left: 20px;
+    padding: 10px 20px;
+    color: var(--basic-white);
     border: none;
-    font-size: 25px;
+    background-color: var(--basic-light-blue);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px var(--background-blue1);
+}
+
+.add-button:hover{
+    cursor: pointer;
+    background-color: var(--background-blue4);
+}
+
+.add-button:active{
+    cursor: pointer;
+    background-color: var(--background-blue1);
+    box-shadow: 5px 5px 5px rgb(20, 0, 78) inset;
+}
+
+.career-item::before {
+    top: 7px;
 }
 
 .contact-inf {
@@ -443,7 +479,8 @@ input[type="range"] {
 }
 
 .btn-save,
-.btn-clear {
+.btn-clear,
+.btn-restore {
     color: var(--basic-white);
     padding: 15px 30px;
     border: none;
@@ -453,15 +490,42 @@ input[type="range"] {
 }
 
 .btn-save:hover,
-.btn-clear:hover {
+.btn-clear:hover,
+.btn-restore:hover {
     cursor: pointer;
     background-color: var(--background-blue4);
     box-shadow: 5px 5px 5px var(--basic-grey);
 }
 
 .btn-save:active,
-.btn-clear:active {
+.btn-clear:active,
+.btn-restore:active {
     cursor: pointer;
     background-color: var(--background-blue1);
     box-shadow: 5px 5px 5px rgb(20, 0, 78) inset;
+}
+
+
+
+.inp-true {
+    background: url(img/icons/check_mark.svg) no-repeat;
+    background-position: 98% 50%;
+    background-size: 23px 23px;
+    margin-right: 5px;    
+    padding-right: 30px;
+}
+
+.inp-true:focus{
+    border: 5px solid #198754 !important;
+}
+
+.inp-false {
+    background: url(img/icons/mistake_mark.svg) no-repeat;
+    background-position: 98% 50%;
+    background-size: 23px 23px;
+    padding-right: 30px;
+}
+
+.inp-false:focus{
+    border: 5px solid red !important;
 }
